@@ -9,7 +9,8 @@
 import Alamofire
 
 struct Config {
-  static let API = "http://yatodo.rb/v1"
+//  static let API = "http://yatodo.rb/v1"
+  static let API = "https://yatodo-api.herokuapp.com/v1"
 }
 
 enum APIRouter: URLRequestConvertible {
@@ -21,7 +22,7 @@ enum APIRouter: URLRequestConvertible {
     switch self {
     case .todos:
       return "/todos"
-    case .createTodo(let title, let category):
+    case .createTodo:
       return "/todos"
     case .deleteTodo(let id):
       return "/todos/\(id)"

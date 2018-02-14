@@ -11,14 +11,14 @@ import UIKit
 
 struct CoreDataStore {
 
-  static var persistentStoreCoordinator: NSPersistentStoreCoordinator? {
+  static var persistenceCoordinator: NSPersistentStoreCoordinator? {
     if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
       return appDelegate.persistentContainer.persistentStoreCoordinator
     }
     return nil
   }
 
-  static var managedObjectModel: NSManagedObjectModel? {
+  static var mom: NSManagedObjectModel? {
     if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
       return appDelegate.persistentContainer.managedObjectModel
     }

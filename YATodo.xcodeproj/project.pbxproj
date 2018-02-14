@@ -17,7 +17,6 @@
 		0C6496F720259CDB00799FD9 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6496F620259CDB00799FD9 /* Identifiable.swift */; };
 		0C6496F920259D4200799FD9 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6496F820259D4200799FD9 /* Loadable.swift */; };
 		0C6496FB2025BC1D00799FD9 /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6496FA2025BC1D00799FD9 /* StoryboardExtensions.swift */; };
-		0C6497002027544C00799FD9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6496FF2027544C00799FD9 /* APIManager.swift */; };
 		0C7AA4A92034446F00398B5E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AA4A82034446F00398B5E /* APIError.swift */; };
 		0C7AE65A20343F8800916893 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AE65920343F8800916893 /* ErrorTypes.swift */; };
 		0C7E20D820275939005F2A8F /* ISODateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E20D720275939005F2A8F /* ISODateTransform.swift */; };
@@ -55,7 +54,6 @@
 		0C6496F620259CDB00799FD9 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		0C6496F820259D4200799FD9 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		0C6496FA2025BC1D00799FD9 /* StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
-		0C6496FF2027544C00799FD9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0C7AA4A82034446F00398B5E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		0C7AE65920343F8800916893 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
 		0C7E20D720275939005F2A8F /* ISODateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISODateTransform.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				0C6496F1202577D200799FD9 /* APIRouter.swift */,
-				0C6496FF2027544C00799FD9 /* APIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -418,7 +415,6 @@
 				0C96365D2025751C00ECBCBD /* TodoListLocalDataManager.swift in Sources */,
 				0C963672202575C900ECBCBD /* Todo.swift in Sources */,
 				0C6496F720259CDB00799FD9 /* Identifiable.swift in Sources */,
-				0C6497002027544C00799FD9 /* APIManager.swift in Sources */,
 				0C9636692025753E00ECBCBD /* TodoDetailWireFrame.swift in Sources */,
 				0C9636602025751C00ECBCBD /* TodoListPresenter.swift in Sources */,
 			);

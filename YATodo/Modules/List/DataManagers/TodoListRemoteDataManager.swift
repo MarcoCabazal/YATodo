@@ -13,22 +13,6 @@ import Hydra
 // MARK: CALLED BY INTERACTOR
 class TodoListRemoteDataManager: TodoListRemoteDataManagerProtocol {
 
-  /*
-  func retrieveDataFromAPI() -> Promise<[TodoModel]> {
-    return Promise<[TodoModel]>(in: .background) { resolve, reject, _ in
-      APIManager.shared.getCollection(of: TodoModel.self,
-                                      router: APIRouter.todos,
-                                      keyPath: "todos") { data, error, json in
-        if let data = data {
-          resolve(data)
-        } else if let error = error {
-          reject(error)
-        }
-      }
-    }
-  }
- */
-
   func retrieveDataFromAPI() -> Promise<[TodoModel]> {
     return Promise<[TodoModel]>(in: .background) { resolve, reject, _ in
       Alamofire.request(APIRouter.todos)
