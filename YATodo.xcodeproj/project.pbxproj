@@ -18,6 +18,7 @@
 		0C6496F920259D4200799FD9 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6496F820259D4200799FD9 /* Loadable.swift */; };
 		0C6496FB2025BC1D00799FD9 /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6496FA2025BC1D00799FD9 /* StoryboardExtensions.swift */; };
 		0C7AA4A92034446F00398B5E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AA4A82034446F00398B5E /* APIError.swift */; };
+		0C7AA4AF203519A300398B5E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0C7AA4AE203519A300398B5E /* README.md */; };
 		0C7AE65A20343F8800916893 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7AE65920343F8800916893 /* ErrorTypes.swift */; };
 		0C7E20D820275939005F2A8F /* ISODateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E20D720275939005F2A8F /* ISODateTransform.swift */; };
 		0C963650202574FC00ECBCBD /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96364F202574FC00ECBCBD /* CoreDataStore.swift */; };
@@ -55,6 +56,7 @@
 		0C6496F820259D4200799FD9 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		0C6496FA2025BC1D00799FD9 /* StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
 		0C7AA4A82034446F00398B5E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		0C7AA4AE203519A300398B5E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		0C7AE65920343F8800916893 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
 		0C7E20D720275939005F2A8F /* ISODateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISODateTransform.swift; sourceTree = "<group>"; };
 		0C96364F202574FC00ECBCBD /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
@@ -116,18 +118,12 @@
 		0C39AF89201E409F0096658D /* YATodo */ = {
 			isa = PBXGroup;
 			children = (
+				0C7AA4B0203519EE00398B5E /* Meta */,
 				0C39AF8A201E409F0096658D /* AppDelegate.swift */,
 				0C4B5E2720278034004B5591 /* Modules */,
-				0C541C27202765530052DC1D /* Custom Views */,
-				0C96366C202575C900ECBCBD /* Models */,
-				0C96364E202574EB00ECBCBD /* Core Data */,
+				0C7AA4AA203515D200398B5E /* Storyboards and Views */,
+				0C7AA4AB2035164700398B5E /* Data */,
 				0C6496F520259CCB00799FD9 /* Support */,
-				0C6496F0202577D200799FD9 /* Networking */,
-				0C39AF8E201E409F0096658D /* Main.storyboard */,
-				0C6496FC2025E13D00799FD9 /* ErrorTypes */,
-				0C39AF91201E409F0096658D /* Assets.xcassets */,
-				0C39AF93201E409F0096658D /* LaunchScreen.storyboard */,
-				0C39AF96201E409F0096658D /* Info.plist */,
 			);
 			path = YATodo;
 			sourceTree = "<group>";
@@ -165,6 +161,8 @@
 				0C6496F820259D4200799FD9 /* Loadable.swift */,
 				0C6496FA2025BC1D00799FD9 /* StoryboardExtensions.swift */,
 				0C7E20D720275939005F2A8F /* ISODateTransform.swift */,
+				0C6496FC2025E13D00799FD9 /* ErrorTypes */,
+				0C6496F0202577D200799FD9 /* Networking */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -179,13 +177,42 @@
 			path = ErrorTypes;
 			sourceTree = "<group>";
 		};
-		0C96364E202574EB00ECBCBD /* Core Data */ = {
+		0C7AA4AA203515D200398B5E /* Storyboards and Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C39AF91201E409F0096658D /* Assets.xcassets */,
+				0C39AF93201E409F0096658D /* LaunchScreen.storyboard */,
+				0C39AF8E201E409F0096658D /* Main.storyboard */,
+				0C541C27202765530052DC1D /* Custom Views */,
+			);
+			path = "Storyboards and Views";
+			sourceTree = "<group>";
+		};
+		0C7AA4AB2035164700398B5E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0C96364E202574EB00ECBCBD /* Persistence */,
+				0C96366C202575C900ECBCBD /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0C7AA4B0203519EE00398B5E /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				0C7AA4AE203519A300398B5E /* README.md */,
+				0C39AF96201E409F0096658D /* Info.plist */,
+			);
+			name = Meta;
+			sourceTree = "<group>";
+		};
+		0C96364E202574EB00ECBCBD /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
 				0C96364F202574FC00ECBCBD /* CoreDataStore.swift */,
 				0C963673202576D700ECBCBD /* Todo.xcdatamodeld */,
 			);
-			path = "Core Data";
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		0C9636512025751C00ECBCBD /* List */ = {
@@ -315,6 +342,7 @@
 			files = (
 				0C39AF95201E409F0096658D /* LaunchScreen.storyboard in Resources */,
 				0C541C2D20276FA60052DC1D /* TodoCell.xib in Resources */,
+				0C7AA4AF203519A300398B5E /* README.md in Resources */,
 				0C39AF92201E409F0096658D /* Assets.xcassets in Resources */,
 				0C39AF90201E409F0096658D /* Main.storyboard in Resources */,
 			);
